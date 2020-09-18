@@ -60,7 +60,8 @@ def move():
             return
 
     ontimer(move, 50)
-
+    n=5
+    ontimer(move, int(50*(1/n)))
 setup(420, 420, 370, 0)
 hideturtle()
 up()
