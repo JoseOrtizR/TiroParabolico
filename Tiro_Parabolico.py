@@ -26,7 +26,8 @@ def inside(xy):
 def draw():
     "Draw ball and targets."
     clear()
-
+#Esta funcion crea las bolas de proyectil y las bolas que son los que se usan como los "targets"
+    #Le da el movimiento a las pelotas depende en donde haces el "tap"
     for target in targets:
         goto(target.x, target.y)
         dot(20, 'blue')
@@ -52,7 +53,7 @@ def move():
         ball.move(speed)#Se mueve el proyectil tomando como argumento el vector velocidad.
 
     dupe = targets.copy()
-    targets.clear()
+    targets.clear() #Aqui al momento de pegarle con el proyectil, se borra el target
 
     for target in dupe:
         if abs(target - ball) > 13:
@@ -78,3 +79,4 @@ tracer(False)
 onscreenclick(tap)
 move()
 done()
+#Llamamos las funciones para crear el juego
