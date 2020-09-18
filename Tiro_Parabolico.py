@@ -1,10 +1,13 @@
+####Fernando Rodriguez - A01194932 (ferrdz99)####
+####Jose de Jesús Ortiz Rangel - A01611006 (JoseOrtizR)####
+#Librerias utilizadas para el codigo
 from random import randrange
 from turtle import *
 from freegames import vector
-
-ball = vector(-200, -200)
-speed = vector(0, 0)
-targets = []
+#Definicion de variables
+ball = vector(-200, -200) #La pelota
+speed = vector(0, 0) #Velocidad
+targets = [] #Aqui se hace matriz, se van agregando con appends en la funcion "Move"
 
 def tap(x, y):
     "Respond to screen tap."
